@@ -1,12 +1,12 @@
-var Skill = function(data){
+var Skill = function (data) {
 	var self = this;
 	self.name = '';
 	self.staminaDrain = 1;
 	self.energyDrain = 1;
 	self.time = 1;
 	self.output = 1;
-	
-	if (data != null){
+
+	if (data != null) {
 		self.name = data.name;
 		self.staminaDrain = data.staminaDrain;
 		self.energyDrain = data.energyDrain;
