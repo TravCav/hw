@@ -1,10 +1,10 @@
 var Entity = require("./Entity.js");
 
 (function () {
-	console.log('yep');
+	console.log('begin');
 
 	var user = new Entity();
 	console.log(user.skills);
 
-	console.log('k');
+	console.log('done');
 })();
