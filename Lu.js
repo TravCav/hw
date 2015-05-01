@@ -6,6 +6,7 @@ var Work = require("./Work.js");
 
 	var user1 = new Entity();
 	var user2 = new Entity();
+
 	user1.name = "pep1";
 	user2.name = "pe2";
 
