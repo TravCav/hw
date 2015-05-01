@@ -1,16 +1,13 @@
+var Projects = require("./Projects.js");
 var Entity = require("./Entity.js");
 var Work = require("./Work.js");
 
 (function () {
 	console.log('begin');
 
-	var user1 = new Entity();
-	var user2 = new Entity();
+	var stanley = new Entity("Stanley");
 
-	user1.name = "Employee1";
-	user2.name = "Employee2";
-
-	Work.Do(user1,user2);		
-
+	Work.Do(stanley,Projects.TTOps );		
+		
 	console.log('done');
 })();
