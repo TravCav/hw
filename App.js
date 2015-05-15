@@ -6,8 +6,9 @@ var Work = require("./Work.js");
 	console.log('begin');
 
 	var stanley = new Entity("Stanley");
-
-	Work.Do(stanley,Projects.TTOps );		
-		
+	
+	var workDone = Work.DoWork(stanley,Projects.TTOps );
+	console.log("-Work done: " + workDone);
+			
 	console.log('done');
 })();
