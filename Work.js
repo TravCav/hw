@@ -4,11 +4,11 @@ var DoWork = function (entity1, entity2) {
      Work(entity1,entity2);
      Work(entity2,entity1);
 
-     entity1.Status();
-     entity2.Status();
+     ////entity1.Status();
+     ////entity2.Status();
 
      var workDone = entity1.energy < 1 || entity2.energy < 1;
-     console.log("-Work done: " + workDone + "\r\n");
+     ////console.log("-Work done: " + workDone + "\r\n");
 
      return workDone;
 };
@@ -23,7 +23,7 @@ var Work = function (entity1, entity2) {
           output = topSkill.output;
      }
 
-     entity2.energy -= output;
+     entity2.SetEnergy(entity2.energy - output);
 };
 
 module.exports.DoWork = DoWork;
