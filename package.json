@@ -1,0 +1,19 @@
+{
+  "name": "lu",
+  "version": "1.0.0",
+  "description": "- git pull",
+  "main": "src/App.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/travcav/lu.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/travcav/lu/issues"
+  },
+  "homepage": "https://github.com/travcav/lu#readme"
+}
