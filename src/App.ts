@@ -1,6 +1,7 @@
-let Projects = require("./Projects.js");
-let Entity = require("./Entity.js");
-let Work = require("./Work.js");
+import { Projects } from "./Projects";
+import { Entity } from "./Entity";
+import { DoWork, Work } from "./Work";
+
 
 (function () {
     console.log("begin");
@@ -9,13 +10,13 @@ let Work = require("./Work.js");
 
     let workDone = false;
     while (!workDone) {
-        workDone = Work.DoWork(stanley, new Entity("Project1"));
+        workDone = DoWork(stanley, new Entity("Project1"));
     }
     console.log("project1 done\r\n");
 
     workDone = false;
     while (!workDone) {
-        workDone = Work.DoWork(stanley, new Entity("Project2"));
+        workDone = DoWork(stanley, new Entity("Project2"));
     }
     console.log("project2 done\r\n");
 

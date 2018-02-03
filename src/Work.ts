@@ -1,4 +1,6 @@
-export function DoWork(entity1, entity2) {
+import { Entity } from "./Entity";
+
+export function DoWork(entity1: Entity, entity2: Entity) {
     console.log("-" + entity1.name + " vs " + entity2.name);
 
     Work(entity1, entity2);
@@ -9,7 +11,7 @@ export function DoWork(entity1, entity2) {
     return workDone;
 };
 
-export function Work(entity1, entity2) {
+export function Work(entity1: Entity, entity2: Entity) {
     let output = 0;
 
     if (entity1.energy > 0) {

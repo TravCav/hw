@@ -1,10 +1,6 @@
-let Entity = require("./Entity.js");
+import { Entity } from "./Entity";
 
-let TTOps = new Entity("TTOps");
-let EDUse = new Entity("EDUse");
+export let TTOps = new Entity("TTOps");
+export let EDUse = new Entity("EDUse");
 
-let Projects = [TTOps, EDUse];
-
-module.exports.Projects = Projects;
-module.exports.TTOps = TTOps;
-module.exports.EDUse = EDUse;
+export let Projects = [TTOps, EDUse];

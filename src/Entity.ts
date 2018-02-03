@@ -1,29 +1,33 @@
 import { basicSkill, ISkill } from "./Skill";
 
-export function Entity(initName: string) {
-    let name: string = initName;
-    let stamina = 1;
-    let energy = 5;
-    let skills: ISkill[] = [basicSkill];
-    let smarts: number = 1;
-    let speed: number = 1;
-    let regen: number = 1;
+export class Entity {
+    public name: string = "";
+    public stamina = 1;
+    public energy = 5;
+    public skills: ISkill[] = [basicSkill];
+    public smarts: number = 1;
+    public speed: number = 1;
+    public regen: number = 1;
 
-    function SetParameters(data: any) {
-        name = data.name;
-        stamina = data.stamina;
-        energy = data.energy;
+    constructor(initName: string) {
+        this.name = initName;
     }
 
-    function SetEnergy(newEnergy: number) {
-        self.energy = newEnergy;
-        self.Status();
-        if (self.energy < 1) {
-            console.log(self.name + " has finished...");
+    SetParameters(data: any) {
+        this.name = data.name;
+        this.stamina = data.stamina;
+        this.energy = data.energy;
+    }
+
+    SetEnergy(newEnergy: number) {
+        this.energy = newEnergy;
+        this.Status();
+        if (this.energy < 1) {
+            console.log(this.name + " has finished...");
         }
     };
 
-    function Status() {
-        console.log("---" + self.name + "'s energy: " + self.energy);
+    Status() {
+        console.log("---" + this.name + "'s energy: " + this.energy);
     }
 }
