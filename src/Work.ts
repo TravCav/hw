@@ -11,7 +11,7 @@ export function DoWork(entity1: Entity, entity2: Entity) {
     return workDone;
 };
 
-export function Work(entity1: Entity, entity2: Entity) {
+function Work(entity1: Entity, entity2: Entity) {
     let output = 0;
 
     if (entity1.energy > 0) {
