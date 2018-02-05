@@ -1,10 +1,10 @@
-import { Projects } from "./Projects";
 import { Entity } from "./Entity";
+import { Projects } from "./Projects";
 import { DoWork } from "./Work";
 
 console.log("begin");
 
-let stanley = new Entity("Stanley");
+const stanley = new Entity("Stanley");
 
 let workDone = false;
 while (!workDone) {

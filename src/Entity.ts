@@ -13,21 +13,21 @@ export class Entity {
         this.name = initName;
     }
 
-    SetParameters(data: any) {
+    public SetParameters(data: any) {
         this.name = data.name;
         this.stamina = data.stamina;
         this.energy = data.energy;
     }
 
-    SetEnergy(newEnergy: number) {
+    public SetEnergy(newEnergy: number) {
         this.energy = newEnergy;
         this.Status();
         if (this.energy < 1) {
             console.log(this.name + " has finished...");
         }
-    };
+    }
 
-    Status() {
+    public Status() {
         console.log("---" + this.name + "'s energy: " + this.energy);
     }
 }
