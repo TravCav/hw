@@ -1,4 +1,5 @@
 import { basicSkill, ISkill } from "./Skill";
+import { DoWork } from "./Work";
 
 export class Entity {
     public name: string = "";
