@@ -18,12 +18,12 @@ export class Skill implements ISkill {
         energyDrain: number,
         time: number,
         output: number) {
-            this.name = name;
-            this.staminaDrain = staminaDrain;
-            this.energyDrain = energyDrain;
-            this.time = time;
-            this.output = output;
-         }
+        this.name = name;
+        this.staminaDrain = staminaDrain;
+        this.energyDrain = energyDrain;
+        this.time = time;
+        this.output = output;
+    }
 }
 
 // tslint:disable-next-line:max-classes-per-file
@@ -34,6 +34,27 @@ class Ability implements ISkill {
         public energyDrain: number,
         public time: number,
         public output: number) { /* stuff */ }
+}
+
+// tslint:disable-next-line:max-classes-per-file
+class Beast {
+    public name: string;
+    public age: number;
+}
+
+// tslint:disable-next-line:max-classes-per-file
+class Creature extends Beast {
+    constructor(public name: string, public age: number) { super(); }
+}
+
+interface IAnimal {
+    name: string;
+    age: number;
+}
+
+// tslint:disable-next-line:max-classes-per-file
+class Animal implements IAnimal {
+    constructor(public name: string, public age: number) { /* constructor */ }
 }
 
 export const basicSkill: ISkill = {
