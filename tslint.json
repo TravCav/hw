@@ -8,7 +8,8 @@
         "no-console": false,
         "use-input-property-decorator": true,
         "use-output-property-decorator": true,
-        "use-host-property-decorator": true
+        "use-host-property-decorator": true,
+        "trailing-comma": false
     },
     "rulesDirectory": []
 }
